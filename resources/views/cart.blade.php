@@ -90,15 +90,15 @@
 							</tbody>
 						</table>
 						<div class="cart-buttons">
-							<a href="cart.html" class="boxed-btn">Update Cart</a>
-							<a href="checkout.html" class="boxed-btn black">Check Out</a>
+							<a href="{{ route('cart') }}" class="boxed-btn">Update Cart</a>
+							<a href="{{ route('checkout') }}" class="boxed-btn black">Check Out</a>
 						</div>
 					</div>
 
 					<div class="coupon-section">
 						<h3>Apply Coupon</h3>
 						<div class="coupon-form-wrap">
-							<form action="index.html">
+							<form action="{{ route('index') }}">
 								<p><input type="text" placeholder="Coupon"></p>
 								<p><input type="submit" value="Apply"></p>
 							</form>

@@ -29,6 +29,10 @@ Route::get('/cart',function(){
     return view('cart');
 })->name('cart');
 
+Route::get('/404',function(){
+    return view('404');
+})->name('404');
+
 Route::get('/checkout',function(){
     return view('checkout');
 })->name('checkout');
