@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/welcome', function () {
     return view('welcome');
-});
+})->name('welcome');;
 
 Route::get('/',function(){
     return view('index');
@@ -60,3 +60,13 @@ Route::get('/single-news',function(){
 Route::get('/single-product',function(){
     return view('single-product');
 })->name('single-product');
+
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified',
+])->group(function () {
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
+});
