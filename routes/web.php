@@ -61,6 +61,11 @@ Route::get('/single-product',function(){
     return view('single-product');
 })->name('single-product');
 
+Route::middleware('auth')->group(function () {
+    //
+});
+
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
