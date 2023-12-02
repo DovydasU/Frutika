@@ -20,3 +20,39 @@ Route::get('/', function () {
 Route::get('/',function(){
     return view('index');
 })->name('index');
+
+Route::get('/about',function(){
+    return view('about');
+})->name('about');
+
+Route::get('/cart',function(){
+    return view('cart');
+})->name('cart');
+
+Route::get('/checkout',function(){
+    return view('checkout');
+})->name('checkout');
+
+Route::get('/contact',function(){
+    return view('contact');
+})->name('contact');
+
+Route::get('/checkout',function(){
+    return view('checkout');
+})->name('checkout');
+
+Route::get('/news',function(){
+    return view('news');
+})->name('news');
+
+Route::get('/shop',function(){
+    return view('shop');
+})->name('shop');
+
+Route::get('/single-news',function(){
+    return view('single-news');
+})->name('single-news');
+
+Route::get('/single-product',function(){
+    return view('single-product');
+})->name('single-product');
