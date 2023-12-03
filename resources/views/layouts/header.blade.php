@@ -31,8 +31,8 @@
 								<li><a href="{{ route('news') }}">News</a></li>
 								<li><a href="{{ route('contact') }}">Contact</a></li>
 								<li><a href="{{ route('shop') }}">Shop</a></li>
-								<li><a href="#">Login</a></li>
-								<li><a href="#">Register</a></li>
+								<li><a href="{{ route('login') }}">Login</a></li>
+								<li><a href="{{ route('register') }}">Register</a></li>
 								<li>
 									<div class="header-icons">
 										<a class="shopping-cart" href="{{ route('cart') }}"><i class="fas fa-shopping-cart"></i></a>
