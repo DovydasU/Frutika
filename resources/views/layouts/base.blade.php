@@ -47,6 +47,28 @@
 	@include('layouts.footer')
 	@include('layouts.copyright')
 
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+			// Get the current path from the URL
+			var currentPath = window.location.pathname;
+	
+			// Get all the navigation links
+			var navLinks = document.querySelectorAll('.main-menu ul li a');
+	
+			// Remove 'current-list-item' class from all navigation items
+			navLinks.forEach(function(link) {
+				link.parentElement.classList.remove('current-list-item');
+			});
+	
+			// Loop through each link and compare the href attribute with the current path
+			navLinks.forEach(function(link) {
+				// If the link's href is exactly equal to the current path, add the 'current-list-item' class
+				if (link.pathname === currentPath) {
+					link.parentElement.classList.add('current-list-item');
+				}
+			});
+		});
+	</script>
 	<!-- jquery -->
 	<script src="js/jquery-1.11.3.min.js"></script>
 	<!-- bootstrap -->

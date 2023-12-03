@@ -17,7 +17,7 @@
 							<ul>
 								<li class="current-list-item"><a href="{{ route('index') }}">Home</a></li>
 								<li><a href="{{ route('about') }}">About</a></li>
-								<li><a href="#">Pages</a>
+								{{-- <li><a href="#">Pages</a>
 									<ul class="sub-menu">
 										<li><a href="{{ route('404') }}">404 page</a></li>
 										<li><a href="{{ route('about') }}">About</a></li>
@@ -27,10 +27,12 @@
 										<li><a href="{{ route('news') }}">News</a></li>
 										<li><a href="{{ route('shop') }}">Shop</a></li>
 									</ul>
-								</li>
+								</li> --}}
 								<li><a href="{{ route('news') }}">News</a></li>
 								<li><a href="{{ route('contact') }}">Contact</a></li>
 								<li><a href="{{ route('shop') }}">Shop</a></li>
+								<li><a href="#">Login</a></li>
+								<li><a href="#">Register</a></li>
 								<li>
 									<div class="header-icons">
 										<a class="shopping-cart" href="{{ route('cart') }}"><i class="fas fa-shopping-cart"></i></a>
